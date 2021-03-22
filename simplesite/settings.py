@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'bboard.apps.BboardConfig',
 ]
-
+# посредники, предварительная обработка клиенского запроса
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -104,15 +104,15 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/3.1/topics/i18n/
 
-#LANGUAGE_CODE = 'en-us'
+# LANGUAGE_CODE = 'en-us'
 LANGUAGE_CODE = 'ru'
 
 TIME_ZONE = 'UTC'
-
+# True  автоперед на  LANGUAGE_CODE
 USE_I18N = True
-
+# часла и даты преобразовываются
 USE_L10N = True
-
+# хранить отметки временной зоны
 USE_TZ = True
 
 
@@ -120,3 +120,4 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'
+# ABSOLUTE_URL_OVERRIDES = {}

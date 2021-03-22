@@ -16,11 +16,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
-#now use bborad/urls.py
-#from bboard.views import index
+# now use bborad/urls.py
+# from bboard.views import index
 
 urlpatterns = [
-    #path('bboard/',index),
+    # path('bboard/',index),
     path('bboard/', include('bboard.urls')),
     path('admin/', admin.site.urls),
 ]
